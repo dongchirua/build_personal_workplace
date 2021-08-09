@@ -1,2 +1,0 @@
-#!/bin/bash
-docker run --shm-size=1g --cpus=4 --cpuset-cpus=0,1,2 --memory 32G --ulimit memlock=-1 --ulimit stack=67108864 -p 8890:8888 -p 6008:6006 -it --rm --ipc=host -v $PWD:/workspace --name br_nogpu br_custom_v1 bash
