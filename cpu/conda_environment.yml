@@ -1,0 +1,25 @@
+name: workspace
+channels:
+  - anaconda
+  - conda-forge
+  - pytorch
+  - pyg
+dependencies:
+  - python=3.8
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - scipy
+  - pandas
+  - pytorch-cpu
+  - torchvision-cpu
+  - pyg # torch geometry
+  - pip
+  - swig
+  - pip:
+    - tensorflow
+    - networkx
+    - lightning-bolts[extra]
+    - tensorboardX
+    - jupyter-tensorboard
+    - crc32c # for tensorboardX
