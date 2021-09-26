@@ -3,9 +3,9 @@ channels:
   - anaconda
   - conda-forge
   - pytorch
-  - pyg
 dependencies:
   - python=3.8
+  - ipython
   - jupyterlab
   - matplotlib
   - numpy
@@ -13,7 +13,6 @@ dependencies:
   - pandas
   - pytorch-cpu
   - torchvision-cpu
-  - pyg # torch geometry
   - pip
   - swig
   - pip:
@@ -21,5 +20,4 @@ dependencies:
     - networkx
     - lightning-bolts[extra]
     - tensorboardX
-    - jupyter-tensorboard
     - crc32c # for tensorboardX
