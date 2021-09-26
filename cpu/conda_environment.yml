@@ -5,8 +5,8 @@ channels:
   - pytorch
 dependencies:
   - python=3.8
-  - ipython
   - jupyterlab
+  - ipython
   - matplotlib
   - numpy
   - scipy
@@ -16,8 +16,9 @@ dependencies:
   - pip
   - swig
   - pip:
-    - tensorflow
+    - tensorboard==2.2  # current jupyter-tensorboard has error with standard_tensorboard_wsgi
     - networkx
-    - lightning-bolts[extra]
+    - lightning-bolts
     - tensorboardX
+    - jupyter-tensorboard
     - crc32c # for tensorboardX
