@@ -7,3 +7,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN apt-get update && apt-get install -y git htop
 
 ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libtcmalloc_minimal.so.4
+
+RUN chmox +x install.sh && ./install.sh
