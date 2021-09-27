@@ -1,8 +1,9 @@
 name: workspace
 channels:
-  - anaconda
+  - defaults
   - conda-forge
   - pytorch
+  - pyg
 dependencies:
   - python=3.8
   - jupyterlab
@@ -11,13 +12,16 @@ dependencies:
   - numpy
   - scipy
   - pandas
-  - pytorch-cpu
-  - torchvision-cpu
+  - pytorch=1.9.1
+  - torchvision
+  - torchaudio
+  - cpuonly
+  - pyg
   - pip
   - swig
   - pip:
-    - tensorboard==2.2  # current jupyter-tensorboard has error with standard_tensorboard_wsgi
     - networkx
+    - pytorch-lightning
     - lightning-bolts
     - tensorboardX
     - jupyter-tensorboard
