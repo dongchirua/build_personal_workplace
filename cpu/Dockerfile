@@ -2,7 +2,7 @@ FROM continuumio/miniconda3
 
 WORKDIR /workspace/
 
-RUN apt-get update && apt-get -y install build-essential htop graphviz graphviz-dev curl tmux
+RUN apt-get update && apt-get -y install build-essential htop graphviz curl tmux
 RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - && apt install -y nodejs
 
 ADD ./env.yml /workspace/conda_environment.yml
